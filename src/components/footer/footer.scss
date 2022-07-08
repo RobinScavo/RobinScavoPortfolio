@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: var(--background);
+    box-shadow: 2px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.footer-text {
+    font-size: 13px;
+    color: var(--accent);
+    font-family: 'Trispace', sans-serif;
+}
+
+.credit-text {
+    color: var(--light-accent);
+    text-decoration: none;
+}

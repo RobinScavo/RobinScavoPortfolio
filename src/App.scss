@@ -1,0 +1,27 @@
+:root {
+  --black-color: rgb(15, 12, 1);
+  --white-color: rgb(248, 242, 242);
+  --gray-color: rgba(40, 85, 110,0.5);
+  --background: rgb(236, 241, 243);
+  --dark-background: rgb(217, 221, 223);
+  --accent: rgb(40, 85, 110);
+  --light-accent: rgb(98, 151, 135);
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.detail-page {
+  background-color: var(--background);
+}
+
+.projects-container {
+  width: 90vw;
+}

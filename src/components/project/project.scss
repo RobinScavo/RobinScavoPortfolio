@@ -1,0 +1,50 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 3px solid var(--gray-color);
+    border-radius: 3px;
+}
+
+.project-title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 35px;
+    left: 0;
+    height: 40px;
+    background-color: var(--light-accent);
+    font-size: 22px;
+    color: var(--white-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: top 300ms ease-out;
+    visibility: hidden;
+    z-index: 1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.project-container:hover .project-title {
+    top: 70px;
+    visibility: visible;
+}
+
+.project-container:hover {
+    border: 3px solid var(--light-accent);
+}
+
+@media only screen and (max-width: 1200px) {
+    .project-title {
+        top: 70px;
+        visibility: visible;
+    }
+}

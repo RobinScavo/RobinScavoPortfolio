@@ -1,0 +1,110 @@
+.small-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    font-size: 18px;
+    background-color: var(--background);
+}
+
+.small-header-container.detail {
+    height: 100px;
+    padding-top: 30px;
+
+    .small-link-container {
+        visibility: hidden;
+    }
+
+    .small-icon-container {
+        animation: 400ms ease-out 0s 1 dropdown;
+    }
+}
+
+@keyframes dropdown {
+    0% {
+      transform: rotate(90deg) translateX(-100%);
+    }
+    90% {
+        transform: rotate(90deg) translateX(30%);
+    }
+    100% {
+        transform: rotate(90deg) translateX(0);
+    }
+}
+
+.small-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-header-title {
+    color: var(--black-color);
+}
+
+.title-span {
+    color: var(--accent)
+}
+
+.small-icon-container {
+    height: 25px;
+    width: 25px;
+    transform: rotate(90deg);
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.small-chevron {
+    height: 35px;
+    width: 35px;
+}
+
+.small-header-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.small-link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    color: var(--gray-color);
+    font-family: 'Trispace', sans-serif;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.small-link-container:hover .small-header-icon {
+    color: var(--light-accent);
+}
+
+.small-header-icon {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.small-email-icon {
+    font-size: 17px;
+}
+
+.small-icon-text {
+    font-size: 10px;
+    color: var(--gray-color);
+    color: var(--accent);
+    color: var(--light-accent);
+    // visibility: hidden;
+    transform: translateY(20px);
+    transition: transform 300ms ease-out;
+}
+
+.small-link-container:hover .small-icon-text{
+    transform: translateY(0px);
+}

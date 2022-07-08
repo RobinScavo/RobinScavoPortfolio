@@ -1,0 +1,112 @@
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.detail-images-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+}
+
+.detail-image {
+    margin-bottom: 20px;
+    border: 3px solid var(--gray-color);
+    border-radius: 5px;
+}
+
+.detail-description-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    line-height: 1.7;
+}
+
+.detail-title {
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.detail-title:hover {
+    color: var(--light-accent);
+}
+
+.detail-description {
+    color: var(--black-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.detail-link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 68px;
+    width: 110px;
+    font-family: 'Trispace', sans-serif;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    margin-top: 10px;
+    color: var(--gray-color);
+}
+
+.detail-icon {
+    font-size: 40px;
+}
+
+.detail-icon-text {
+    font-size: 12px;
+    color: var(--light-accent);
+    transform: translateY(20px);
+    transition: transform 300ms ease-out;
+}
+
+.detail-link-container:hover .detail-icon-text{
+    transform: translateY(0px);
+}
+
+.detail-link-container:hover .detail-icon {
+    color: var(--light-accent);
+}
+
+.tech-container {
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+}
+
+.tech-title {
+    font-size: 30px;
+    color: var(--accent);
+}
+
+.tech-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: var(--black);
+    height: 50px;
+    width: 140px;
+    border: 3px solid var(--gray-color);
+    font-family: 'Trispace', sans-serif;
+}
