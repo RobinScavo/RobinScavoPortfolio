@@ -82,6 +82,7 @@
 
 .email-icon {
     font-size: 20px;
+    margin-top: 5px;
 }
 
 .icon-text {
@@ -100,4 +101,10 @@
     color: var(--accent);
     font-family: 'Trispace', sans-serif;
     margin-bottom: -20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .icon-text {
+        transform: translateY(0px);
+    }
 }

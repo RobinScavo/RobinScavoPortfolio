@@ -31,7 +31,7 @@ export const projectData = {
 
     port: {
         title: 'Portfolio Site',
-        description: 'Simple single page application created with the create-react-app template. Different image sizes are rendered based on screen width using the srcSet attribute. Design credit to the talented Matthias Kretchmann.',
+        description: 'My personal website was based on a Gatsby design which I recreated using the create-react-app template. Different image sizes are rendered based on screen width using the srcSet attribute. Design credit to the talented Matthias Kretchmann.',
         link: '/portfolio',
         url: '',
         githubUrl: 'https://github.com/RobinScavo/robins-portfolio',
