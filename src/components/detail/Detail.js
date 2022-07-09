@@ -66,7 +66,9 @@ const Detail = ({ content }) => {
                     rel="noreferrer"
                 >{projectData[content].title}</a>
 
-                <p className="detail-description">{projectData[content].description}</p>
+                {projectData[content].description.map((paragraph) => (
+                    <p className="detail-description">{paragraph}</p>
+                ))}
 
                 <a
                     className="detail-link-container"
