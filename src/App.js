@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+
 import Header from './components/header/Header';
 import SmallHeader from './components/smallHeader/SmallHeader';
 import Footer from './components/footer/Footer';
 import Project from './components/project/Project';
 import Detail from './components/detail/Detail';
 import Seperator from './components/seperator/Seperator';
+import { ScrollToTop } from './tools/utils';
 
 import './App.scss';
 
@@ -34,6 +36,8 @@ function App() {
 
           <Route path='/billings-property-management' element={
             <div className='detail-page'>
+              <ScrollToTop />
+
               <SmallHeader detail={true}/>
 
               <Detail content='bpm'/>
@@ -42,6 +46,8 @@ function App() {
 
           <Route path='/open-book' element={
             <div className='detail-page'>
+              <ScrollToTop />
+
               <SmallHeader />
 
               <Detail content='oe'/>
@@ -50,6 +56,8 @@ function App() {
 
           <Route path='/color-crusher' element={
             <div className='detail-page'>
+              <ScrollToTop />
+
               <SmallHeader />
 
               <Detail content='cc'/>
@@ -58,6 +66,8 @@ function App() {
 
           <Route path='/portfolio' element={
             <div className='detail-page'>
+              <ScrollToTop />
+
               <SmallHeader />
 
               <Detail content='port'/>

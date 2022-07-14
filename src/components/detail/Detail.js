@@ -45,13 +45,16 @@ import ccFifthSmall from '../../images/cc/cc-fifth-300.png';
 import ccFifthMedium from '../../images/cc/cc-fifth-768.png';
 import ccFifthLarge from '../../images/cc/cc-fifth-1280.png';
 
-import openbookSmall from '../../images/oe/openbook-300.png';
-import openbookMedium from '../../images/oe/openbook-768.png';
-import openbookLarge from '../../images/oe/openbook-1280.png';
+import obFirstSmall from '../../images/ob/OB-first-300.png';
+import obFirstMedium from '../../images/ob/OB-first-768.png';
+import obFirstLarge from '../../images/ob/OB-first-1280.png';
+import obSecondSmall from '../../images/ob/OB-second-300.png';
+import obSecondMedium from '../../images/ob/OB-second-768.png';
+import obSecondLarge from '../../images/ob/OB-second-1280.png';
 
-import portSmall from '../../images/port/port-300.png';
-import portMedium from '../../images/port/port-768.png';
-import portLarge from '../../images/port/port-1280.png';
+import portSmall from '../../images/port/port-first-300.png';
+import portMedium from '../../images/port/port-first-768.png';
+import portLarge from '../../images/port/port-first-1280.png';
 
 
 
@@ -59,12 +62,14 @@ const Detail = ({ content }) => {
     return (
         <div className="detail-container">
             <div className="detail-description-container">
+                <h1 className="detail-title">{projectData[content].title}</h1>
+
                 <a
                     href={projectData[content].url}
-                    className="detail-title"
+                    className="link-text"
                     target='_blank'
                     rel="noreferrer"
-                >{projectData[content].title}</a>
+                >{projectData[content].linkText}</a>
 
                 {projectData[content].description.map((paragraph) => (
                     <p className="detail-description">{paragraph}</p>
@@ -195,8 +200,16 @@ const Detail = ({ content }) => {
                 {content === 'oe' &&
                     <div className="detail-images-container">
                         <img
-                            src={openbookSmall}
-                            srcSet={`${openbookSmall} 400w, ${openbookMedium} 868w, ${openbookLarge} 1380w`}
+                            src={obFirstSmall}
+                            srcSet={`${obFirstSmall} 400w, ${obFirstMedium} 868w, ${obFirstLarge} 1380w`}
+                            alt={projectData[content].alt + ' openbook'}
+                            className="detail-image"
+                        />
+                        <Seperator />
+
+                        <img
+                            src={obSecondSmall}
+                            srcSet={`${obSecondSmall} 400w, ${obSecondMedium} 868w, ${obSecondLarge} 1380w`}
                             alt={projectData[content].alt + ' openbook'}
                             className="detail-image"
                         />

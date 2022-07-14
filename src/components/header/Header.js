@@ -41,7 +41,10 @@ const Header = () => {
                     </a>
                 </div>
             </div>
-            <p className="available-text">available for work</p>
+            <div className="available-container">
+                <p className="available-text">billings, mt</p>
+                <p className="available-text">open to relocation</p>
+            </div>
         </section>
      );
 }
