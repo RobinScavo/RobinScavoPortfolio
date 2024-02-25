@@ -86,11 +86,21 @@ const Detail = ({ content }) => {
                 </a>
             </div>
 
+            <div className="tech-container">
+                <h1 className="tech-title">Technologies Used</h1>
+                {projectData[content].tech.map((technology, index) => (
+                    <div className="tech-div" key={`${index}techBox`}>
+                        <p>{technology}</p>
+                    </div>
+                ))}
+            </div>
+            <Seperator />
+
             {content === 'bpm' &&
                 <div className="detail-images-container">
                     <img
                         src={schematicSmall}
-                        srcSet={`${schematicSmall} 400w, ${schematicMedium} 868w, ${schematicLarge} 1380w`}
+                        srcSet={`${schematicSmall} 600w, ${schematicMedium} 1068w, ${schematicLarge} 1580w`}
                         alt={projectData[content].alt + ' schematic'}
                         className="detail-image"
                     />
@@ -98,7 +108,7 @@ const Detail = ({ content }) => {
 
                     <img
                         src={bpmFirstSmall}
-                        srcSet={`${bpmFirstSmall} 400w, ${bpmFirstMedium} 868w, ${bpmFirstLarge} 1380w`}
+                        srcSet={`${bpmFirstSmall} 600w, ${bpmFirstMedium} 1068w, ${bpmFirstLarge} 1580w`}
                         alt={projectData[content].alt + 'first'}
                         className="detail-image"
                     />
@@ -106,7 +116,7 @@ const Detail = ({ content }) => {
 
                     <img
                         src={bpmSecondSmall}
-                        srcSet={`${bpmSecondSmall} 400w, ${bpmSecondMedium} 868w, ${bpmSecondLarge} 1380w`}
+                        srcSet={`${bpmSecondSmall} 600w, ${bpmSecondMedium} 1068w, ${bpmSecondLarge} 1580w`}
                         alt={projectData[content].alt + 'second'}
                         className="detail-image"
                     />
@@ -114,7 +124,7 @@ const Detail = ({ content }) => {
 
                     <img
                         src={bpmThirdSmall}
-                        srcSet={`${bpmThirdSmall} 400w, ${bpmThirdMedium} 868w, ${bpmThirdLarge} 1380w`}
+                        srcSet={`${bpmThirdSmall} 600w, ${bpmThirdMedium} 1068w, ${bpmThirdLarge} 1580w`}
                         alt={projectData[content].alt + 'third'}
                         className="detail-image"
                     />
@@ -122,7 +132,7 @@ const Detail = ({ content }) => {
 
                     <img
                         src={bpmForthSmall}
-                        srcSet={`${bpmForthSmall} 450w, ${bpmForthMedium} 825w, ${bpmForthLarge} 1380w`}
+                        srcSet={`${bpmForthSmall} 600w, ${bpmForthMedium} 825w, ${bpmForthLarge} 1580w`}
                         alt={projectData[content].alt + 'forth'}
                         className="detail-image"
                     />
@@ -130,7 +140,7 @@ const Detail = ({ content }) => {
 
                     <img
                         src={bpmFifthSmall}
-                        srcSet={`${bpmFifthSmall} 400w, ${bpmFifthMedium} 868w, ${bpmFifthLarge} 1380w`}
+                        srcSet={`${bpmFifthSmall} 600w, ${bpmFifthMedium} 1068w, ${bpmFifthLarge} 1580w`}
                         alt={projectData[content].alt + 'fifth'}
                         className="detail-image"
                     />
@@ -138,7 +148,7 @@ const Detail = ({ content }) => {
 
                     <img
                         src={bpmSixthSmall}
-                        srcSet={`${bpmSixthSmall} 400w, ${bpmSixthMedium} 868w, ${bpmSixthLarge} 1380w`}
+                        srcSet={`${bpmSixthSmall} 600w, ${bpmSixthMedium} 1068w, ${bpmSixthLarge} 1580w`}
                         alt={projectData[content].alt + 'sixth'}
                         className="detail-image"
                     />
@@ -149,7 +159,7 @@ const Detail = ({ content }) => {
                     <div className="detail-images-container">
                         <img
                             src={ccSchematicSmall}
-                            srcSet={`${ccSchematicSmall} 400w, ${ccSchematicMedium} 868w, ${ccSchematicLarge} 1380w`}
+                            srcSet={`${ccSchematicSmall} 600w, ${ccSchematicMedium} 1068w, ${ccSchematicLarge} 1580w`}
                             alt={projectData[content].alt + ' schematic'}
                             className="detail-image"
                         />
@@ -157,7 +167,7 @@ const Detail = ({ content }) => {
 
                         <img
                             src={ccFirstSmall}
-                            srcSet={`${ccFirstSmall} 400w, ${ccFirstMedium} 868w, ${ccFirstLarge} 1380w`}
+                            srcSet={`${ccFirstSmall} 600w, ${ccFirstMedium} 1068w, ${ccFirstLarge} 1580w`}
                             alt={projectData[content].alt + ' first'}
                             className="detail-image"
                         />
@@ -165,7 +175,7 @@ const Detail = ({ content }) => {
 
                         <img
                             src={ccSecondSmall}
-                            srcSet={`${ccSecondSmall} 400w, ${ccSecondMedium} 868w, ${ccSecondLarge} 1380w`}
+                            srcSet={`${ccSecondSmall} 600w, ${ccSecondMedium} 1068w, ${ccSecondLarge} 1580w`}
                             alt={projectData[content].alt + ' second'}
                             className="detail-image"
                         />
@@ -173,7 +183,7 @@ const Detail = ({ content }) => {
 
                         <img
                             src={ccThirdSmall}
-                            srcSet={`${ccThirdSmall} 400w, ${ccThirdMedium} 868w, ${ccThirdLarge} 1380w`}
+                            srcSet={`${ccThirdSmall} 600w, ${ccThirdMedium} 1068w, ${ccThirdLarge} 1580w`}
                             alt={projectData[content].alt + ' third'}
                             className="detail-image"
                         />
@@ -181,7 +191,7 @@ const Detail = ({ content }) => {
 
                         <img
                             src={ccForthSmall}
-                            srcSet={`${ccForthSmall} 400w, ${ccForthMedium} 868w, ${ccForthLarge} 1380w`}
+                            srcSet={`${ccForthSmall} 600w, ${ccForthMedium} 1068w, ${ccForthLarge} 1580w`}
                             alt={projectData[content].alt + ' forth'}
                             className="detail-image"
                         />
@@ -189,7 +199,7 @@ const Detail = ({ content }) => {
 
                         <img
                             src={ccFifthSmall}
-                            srcSet={`${ccFifthSmall} 400w, ${ccFifthMedium} 868w, ${ccFifthLarge} 1380w`}
+                            srcSet={`${ccFifthSmall} 600w, ${ccFifthMedium} 1068w, ${ccFifthLarge} 1580w`}
                             alt={projectData[content].alt + ' fifth'}
                             className="detail-image"
                         />
@@ -201,7 +211,7 @@ const Detail = ({ content }) => {
                     <div className="detail-images-container">
                         <img
                             src={obFirstSmall}
-                            srcSet={`${obFirstSmall} 400w, ${obFirstMedium} 868w, ${obFirstLarge} 1380w`}
+                            srcSet={`${obFirstSmall} 600w, ${obFirstMedium} 1068w, ${obFirstLarge} 1580w`}
                             alt={projectData[content].alt + ' openbook'}
                             className="detail-image"
                         />
@@ -209,7 +219,7 @@ const Detail = ({ content }) => {
 
                         <img
                             src={obSecondSmall}
-                            srcSet={`${obSecondSmall} 400w, ${obSecondMedium} 868w, ${obSecondLarge} 1380w`}
+                            srcSet={`${obSecondSmall} 600w, ${obSecondMedium} 1068w, ${obSecondLarge} 1580w`}
                             alt={projectData[content].alt + ' openbook'}
                             className="detail-image"
                         />
@@ -221,22 +231,13 @@ const Detail = ({ content }) => {
                     <div className="detail-images-container">
                         <img
                             src={portSmall}
-                            srcSet={`${portSmall} 400w, ${portMedium} 868w, ${portLarge} 1380w`}
+                            srcSet={`${portSmall} 600w, ${portMedium} 1068w, ${portLarge} 1580w`}
                             alt={projectData[content].alt + ' port'}
                             className="detail-image"
                         />
                         <Seperator />
                     </div>
                 }
-
-            <div className="tech-container">
-                <h1 className="tech-title">Technologies Used</h1>
-                {projectData[content].tech.map((technology, index) => (
-                    <div className="tech-div" key={`${index}techBox`}>
-                        <p>{technology}</p>
-                    </div>
-                ))}
-            </div>
         </div>
      );
 }

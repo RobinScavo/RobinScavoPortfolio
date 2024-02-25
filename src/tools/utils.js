@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 export const projectData = {
     bpm: {
         title: 'Billings Property Management',
-        description: ['My objective with this project was to take an existing website and duplicate it without looking at the codebase. Originally built with only HTML, CSS, and JS, I then refactored to incorporate EJS templating and built a backend with Express and Mongo.', 'I improved on the design (IMO) by adding smooth-scrolling dropdown menus and custom forms.'],
+        description: ['My objective with this project was to take an existing website and duplicate it without looking at the codebase. Originally built with only HTML, CSS, and JS, I then refactored to incorporate EJS templating and built a backend with Express and Mongo.', 'I added a personal touch with smooth-scrolling dropdown menus and custom forms.'],
         link: '/billings-property-management',
         linkText: 'www.billings-property-management.com',
         url: 'https://billings-property-management.herokuapp.com/',
@@ -15,7 +15,7 @@ export const projectData = {
 
     oe: {
         title: 'Open Book',
-        description: ['Open Book was inspired by the challenges faced by teachers during the Covid lockdown. Existing apps used by them for sharing resources were highly monetized (for example, on Boom Cards teachers were charged for the priviledge of publishing a resource which other teachers could then pay to use). I decided if anyone deserved a free-to-use open source application it was them.', 'Open Book is a MERN application allowing for the creation of learning resources which can published and used by others for free. Right now its limited to flash card decks on my favorite subject (web development) but it could be expanded to any subject with images, audio recordings, drag-and-drop etc.'],
+        description: ['Inspired by the challenges faced by teachers during the Covid lockdown, Open Book is a MERN application allowing for the creation and sharing of teaching resources. It was designed as an open-source alternative to existing sites (which are heavily monetized).'],
         link: '/open-book',
         linkText: 'www.open-book.com',
         url: 'https://my-open-book.herokuapp.com/',

@@ -30,39 +30,35 @@ const Project = ({content}) => {
         <Link to={projectData[content].link} className="project-container">
             {content === 'bpm' && <img
                 src={bpmSmall}
-                srcSet={`${bpmSmall} 500w, ${bpmMedium} 968w, ${bpmLarge} 1480w, ${bpmXLarge} 3400w`}
+                srcSet={`${bpmSmall} 700w, ${bpmMedium} 1180w, ${bpmLarge} 1680w, ${bpmXLarge} 3600w`}
                 alt={projectData[content].alt}
                 className="project-image"
             />}
 
             {content === 'cc' && <img
                 src={ccSmall}
-                srcSet={`${ccSmall} 500w, ${ccMedium} 968w, ${ccLarge} 1480w, ${ccXLarge} 3400w`}
+                srcSet={`${ccSmall} 700w, ${ccMedium} 1180w, ${ccLarge} 1680w, ${ccXLarge} 3600w`}
                 alt={projectData[content].alt}
                 className="project-image"
             />}
 
             {content === 'oe' && <img
                 src={obSmall}
-                srcSet={`${obSmall} 500w, ${obMedium} 968w, ${obLarge} 1480w, ${obXLarge} 3400w`}
+                srcSet={`${obSmall} 700w, ${obMedium} 1180w, ${obLarge} 1680w, ${obXLarge} 3600w`}
                 alt={projectData[content].alt}
                 className="project-image"
             />}
 
             {content === 'port' && <img
                 src={portSmall}
-                srcSet={`${portSmall} 500w, ${portMedium} 968w, ${portLarge} 1480w, ${portXLarge} 3400w`}
+                srcSet={`${portSmall} 700w, ${portMedium} 1180w, ${portLarge} 1680w, ${portXLarge} 3600w`}
                 alt={projectData[content].alt}
                 className="project-image"
             />}
 
-            {/* <Seperator /> */}
-
             <div
                 className="project-title"
             >{ projectData[content].title }</div>
-
-            {/* <div className="overlay"></div> */}
         </Link>
      );
 }
